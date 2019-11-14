@@ -1,0 +1,6 @@
+<h1> <%= @department.name %> - <%= @item.name %> </h1>
+<p> <%= @item.description %> </p>
+<%= link_to 'Edit item', edit_department_item_path([@description, @item]) %>
+<%= link_to 'Burn This Item', [@description, @item], method: :delete %>
+<%= link_to 'Back To Items', department_items_path(@department) %>
+
